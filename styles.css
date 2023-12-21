@@ -9,7 +9,7 @@ header {
   top: 0;
   background-color: #eee;
   display: flex;
-
+  margin-top: 0;
   align-items: center;
 }
 
@@ -22,7 +22,7 @@ header {
 
 h1 {
   position: relative;
-  left: 35%;
+  left: 20%;
 }
 
 nav {
@@ -30,6 +30,7 @@ nav {
   right: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .nav-link {
@@ -40,4 +41,62 @@ nav {
 .nav-link:hover {
   cursor: pointer;
   color: gray;
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-header {
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit {
+  font-weight: bold;
+  background-color: yellow;
+  margin: 2%;
+}
+
+.about-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+h3 {
+  justify-self: right;
+  margin-right: 5rem;
+}
+
+p {
+  margin-right: 2rem;
+  font-size: larger;
+}
+
+.section {
+  margin-bottom: 20%;
+}
+
+#video-section {
+  display: flex;
+  justify-content: center;
 }
